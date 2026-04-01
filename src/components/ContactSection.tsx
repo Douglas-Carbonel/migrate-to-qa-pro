@@ -27,7 +27,7 @@ const ContactSection = () => {
               <span className="text-sm font-medium">E-mail</span>
             </a>
             <a
-              href="https://linkedin.com/in/seuperfil"
+              href="https://www.linkedin.com/in/douglascarbonel"
               target="_blank"
               rel="noopener noreferrer"
               className="glass rounded-xl px-6 py-4 flex items-center gap-3 hover:glow-box transition-all duration-300 group"
