@@ -36,7 +36,7 @@ const ContactSection = () => {
               <span className="text-sm font-medium">LinkedIn</span>
             </a>
             <a
-              href="https://github.com/seuperfil"
+              href="https://github.com/Douglas-Carbonel"
               target="_blank"
               rel="noopener noreferrer"
               className="glass rounded-xl px-6 py-4 flex items-center gap-3 hover:glow-box transition-all duration-300 group"
