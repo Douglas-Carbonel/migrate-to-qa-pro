@@ -20,14 +20,14 @@ const ContactSection = () => {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:seuemail@email.com"
+              href="mailto:douglascarbonell@outlook.com"
               className="glass rounded-xl px-6 py-4 flex items-center gap-3 hover:glow-box transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">E-mail</span>
             </a>
             <a
-              href="https://linkedin.com/in/seuperfil"
+              href="https://www.linkedin.com/in/douglascarbonel"
               target="_blank"
               rel="noopener noreferrer"
               className="glass rounded-xl px-6 py-4 flex items-center gap-3 hover:glow-box transition-all duration-300 group"
@@ -36,7 +36,7 @@ const ContactSection = () => {
               <span className="text-sm font-medium">LinkedIn</span>
             </a>
             <a
-              href="https://github.com/seuperfil"
+              href="https://github.com/Douglas-Carbonel"
               target="_blank"
               rel="noopener noreferrer"
               className="glass rounded-xl px-6 py-4 flex items-center gap-3 hover:glow-box transition-all duration-300 group"
