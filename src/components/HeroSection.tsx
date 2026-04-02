@@ -28,13 +28,13 @@ const HeroSection = () => {
             <span>$ whoami</span>
           </div>
 
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-            <span className="text-foreground">Quality</span>
-            <br />
-            <span className="text-gradient">Assurance</span>
-            <br />
-            <span className="text-foreground">Engineer</span>
+          <p className="text-lg md:text-xl text-muted-foreground mb-2 font-mono">Olá, eu sou</p>
+          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2">
+            <span className="text-gradient">Douglas Carbonel</span>
           </h1>
+          <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-muted-foreground">
+            Quality Assurance Engineer
+          </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed">
             De <span className="text-foreground font-medium">Gerente de Suporte</span> em CRM/SAP 
