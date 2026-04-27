@@ -3,20 +3,20 @@ import { ArrowRight } from "lucide-react";
 
 const timeline = [
   {
-    period: "Anterior",
-    role: "Gerente de Suporte",
+    period: "Base",
+    role: "Experiência em Operações e Suporte",
     description: "Liderança de equipes de suporte técnico, gestão de incidentes e SLAs em ambientes CRM e SAP.",
     tags: ["CRM", "SAP", "Gestão de Equipes", "ITIL"],
   },
   {
-    period: "Transição",
-    role: "Especialista em Dados & Processos",
-    description: "Domínio profundo em SQL/HANA, análise de dados, mapeamento de processos de negócio e integrações.",
+    period: "Especialização",
+    role: "Domínio em Dados e Integrações",
+    description: "SQL/HANA avançado, análise de dados, mapeamento de processos de negócio e integrações entre sistemas.",
     tags: ["SQL", "SAP HANA", "ETL", "Análise de Dados"],
   },
   {
-    period: "Atual",
-    role: "QA Engineer",
+    period: "Foco atual",
+    role: "Atuação em QA e Automação",
     description: "Testes funcionais, automatizados e de API. Garantia de qualidade com visão end-to-end do negócio.",
     tags: ["Testes Automatizados", "API Testing", "CI/CD", "Cypress"],
   },
