@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown, Github } from "lucide-react";
+import { ArrowRight, ChevronDown, Github, Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const fullName = "Douglas Carbonel";
@@ -151,6 +151,17 @@ const HeroSection = () => {
             >
               <Github className="w-4 h-4" />
               GitHub
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/douglascarbonel"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 glass border border-border hover:border-primary/40 text-foreground font-medium px-5 py-2.5 rounded-md transition-colors"
+            >
+              <Linkedin className="w-4 h-4" />
+              LinkedIn
             </motion.a>
           </motion.div>
 
