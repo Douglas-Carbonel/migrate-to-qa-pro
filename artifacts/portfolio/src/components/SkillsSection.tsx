@@ -1,48 +1,60 @@
 import { motion } from "framer-motion";
 
-const skillCategories = [
+type Level = "Avançado" | "Intermediário" | "Em evolução";
+
+const levelToWidth: Record<Level, string> = {
+  Avançado: "100%",
+  Intermediário: "66%",
+  "Em evolução": "33%",
+};
+
+const skillCategories: {
+  title: string;
+  icon: string;
+  skills: { name: string; level: Level }[];
+}[] = [
   {
     title: "QA & Testing",
     icon: "🧪",
     skills: [
-      { name: "Testes Funcionais", level: 90 },
-      { name: "Testes de API (Postman/REST)", level: 85 },
-      { name: "Automação de Testes", level: 75 },
-      { name: "Cypress / Selenium", level: 70 },
-      { name: "Testes de Regressão", level: 90 },
+      { name: "Testes Funcionais", level: "Avançado" },
+      { name: "Testes de API (Postman/REST)", level: "Avançado" },
+      { name: "Automação de Testes", level: "Intermediário" },
+      { name: "Cypress / Selenium", level: "Intermediário" },
+      { name: "Testes de Regressão", level: "Avançado" },
     ],
   },
   {
     title: "Dados & Banco",
     icon: "🗄️",
     skills: [
-      { name: "SQL (avançado)", level: 95 },
-      { name: "SAP HANA", level: 85 },
-      { name: "Análise de Dados", level: 88 },
-      { name: "ETL & Integrações", level: 80 },
-      { name: "Modelagem de Dados", level: 75 },
+      { name: "SQL (avançado)", level: "Avançado" },
+      { name: "SAP HANA", level: "Avançado" },
+      { name: "Análise de Dados", level: "Avançado" },
+      { name: "ETL & Integrações", level: "Intermediário" },
+      { name: "Modelagem de Dados", level: "Intermediário" },
     ],
   },
   {
     title: "Gestão & Processos",
     icon: "📋",
     skills: [
-      { name: "Gestão de Incidentes", level: 95 },
-      { name: "ITIL / ITSM", level: 85 },
-      { name: "Metodologias Ágeis", level: 80 },
-      { name: "Documentação Técnica", level: 90 },
-      { name: "Liderança de Equipes", level: 88 },
+      { name: "Gestão de Incidentes", level: "Avançado" },
+      { name: "ITIL / ITSM", level: "Avançado" },
+      { name: "Metodologias Ágeis", level: "Intermediário" },
+      { name: "Documentação Técnica", level: "Avançado" },
+      { name: "Liderança de Equipes", level: "Avançado" },
     ],
   },
   {
     title: "Ferramentas",
     icon: "⚙️",
     skills: [
-      { name: "SAP CRM", level: 92 },
-      { name: "Jira / Azure DevOps", level: 88 },
-      { name: "Git / Versionamento", level: 75 },
-      { name: "CI/CD Pipelines", level: 65 },
-      { name: "Postman / Swagger", level: 82 },
+      { name: "SAP CRM", level: "Avançado" },
+      { name: "Jira / Azure DevOps", level: "Avançado" },
+      { name: "Git / Versionamento", level: "Intermediário" },
+      { name: "CI/CD Pipelines", level: "Em evolução" },
+      { name: "Postman / Swagger", level: "Intermediário" },
     ],
   },
 ];
@@ -87,13 +99,15 @@ const SkillsSection = () => {
                   >
                     <div className="flex justify-between items-center mb-1.5">
                       <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="font-mono text-xs text-muted-foreground">{skill.level}%</span>
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {skill.level}
+                      </span>
                     </div>
                     <div className="h-1.5 rounded-full bg-muted overflow-hidden">
                       <motion.div
                         className="h-full rounded-full bg-gradient-to-r from-primary to-accent-foreground"
                         initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
+                        whileInView={{ width: levelToWidth[skill.level] }}
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: catIndex * 0.1 + skillIndex * 0.05 }}
                       />
