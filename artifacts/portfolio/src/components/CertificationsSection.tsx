@@ -42,7 +42,7 @@ const certifications = [
 
 const CertificationsSection = () => {
   return (
-    <section id="certificacoes" className="py-24 md:py-32">
+    <section id="certificacoes" className="py-16 md:py-24 lg:py-32">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ const CertificationsSection = () => {
           className="mb-16"
         >
           <p className="font-mono text-sm text-primary mb-3">// certificações</p>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold">Certificações</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-5xl font-bold">Certificações</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

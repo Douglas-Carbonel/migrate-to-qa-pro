@@ -44,7 +44,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projetos" className="py-24 md:py-32 relative overflow-hidden">
+    <section id="projetos" className="py-16 md:py-24 lg:py-32 relative overflow-hidden">
       {/* Subtle background accent */}
       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[140px]" />
 
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
           className="mb-16"
         >
           <p className="font-mono text-sm text-primary mb-3">// projetos</p>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold">Projetos em Destaque</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-5xl font-bold">Projetos em Destaque</h2>
           <p className="text-muted-foreground mt-4 max-w-2xl">
             Repositórios públicos e iniciativas pessoais com foco em automação de testes,
             qualidade de software e ferramentas para QA.

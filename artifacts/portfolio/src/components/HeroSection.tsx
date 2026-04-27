@@ -68,7 +68,7 @@ const HeroSection = () => {
         transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
       />
 
-      <div className="container relative z-10 px-6">
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
-            className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2"
+            className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2 break-words"
           >
             <span className="text-gradient">{fullName}</span>
           </motion.h1>
@@ -109,7 +109,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-muted-foreground"
+            className="font-heading text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-muted-foreground"
           >
             Quality Assurance Engineer
           </motion.h2>
@@ -118,7 +118,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.0, duration: 0.6 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed"
           >
             <span className="text-primary font-medium">QA Engineer</span> com experiência em
             troubleshooting, validação de sistemas e fluxos{" "}

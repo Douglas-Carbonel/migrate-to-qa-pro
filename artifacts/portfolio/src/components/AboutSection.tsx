@@ -24,7 +24,7 @@ const timeline = [
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 md:py-32">
+    <section id="sobre" className="py-16 md:py-24 lg:py-32">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ const AboutSection = () => {
           className="mb-16"
         >
           <p className="font-mono text-sm text-primary mb-3">// trajetória</p>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-5xl font-bold">
             Minha Jornada
           </h2>
         </motion.div>

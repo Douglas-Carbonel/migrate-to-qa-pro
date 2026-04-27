@@ -61,7 +61,7 @@ const skillCategories: {
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 md:py-32 bg-secondary/30">
+    <section id="skills" className="py-16 md:py-24 lg:py-32 bg-secondary/30">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const SkillsSection = () => {
           className="mb-16"
         >
           <p className="font-mono text-sm text-primary mb-3">// competências</p>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold">Skills & Habilidades</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-5xl font-bold">Skills & Habilidades</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -81,7 +81,7 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: catIndex * 0.1 }}
-              className="glass rounded-xl p-6 md:p-8 hover:glow-box transition-shadow duration-500"
+              className="glass rounded-xl p-5 sm:p-6 md:p-8 hover:glow-box transition-shadow duration-500"
             >
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-2xl">{category.icon}</span>

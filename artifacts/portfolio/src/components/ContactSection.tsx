@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github, Download } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-24 md:py-32 bg-secondary/30">
+    <section id="contato" className="py-16 md:py-24 lg:py-32 bg-secondary/30">
       <div className="container px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,7 +12,7 @@ const ContactSection = () => {
           className="max-w-2xl mx-auto text-center"
         >
           <p className="font-mono text-sm text-primary mb-3">// contato</p>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">Vamos Conversar?</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-5xl font-bold mb-6">Vamos Conversar?</h2>
 
           {/* Status badge */}
           <motion.div
@@ -34,7 +34,7 @@ const ContactSection = () => {
             </span>
           </motion.div>
 
-          <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+          <p className="text-muted-foreground text-base md:text-lg mb-10 leading-relaxed">
             Estou aberto a oportunidades em QA, testes automatizados e garantia de qualidade.
             Entre em contato para trocarmos uma ideia.
           </p>
