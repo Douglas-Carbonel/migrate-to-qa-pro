@@ -96,25 +96,14 @@ const HeroSection = () => {
             Olá, eu sou
           </motion.p>
 
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2">
-            <span className="text-gradient inline-block">
-              {fullName.split("").map((char, i) => (
-                <motion.span
-                  key={`${char}-${i}`}
-                  initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
-                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  transition={{
-                    delay: 1.4 + i * 0.04,
-                    duration: 0.5,
-                    ease: "easeOut",
-                  }}
-                  className="inline-block"
-                >
-                  {char === " " ? "\u00A0" : char}
-                </motion.span>
-              ))}
-            </span>
-          </h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 24, filter: "blur(10px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
+            className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2"
+          >
+            <span className="text-gradient">{fullName}</span>
+          </motion.h1>
 
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
