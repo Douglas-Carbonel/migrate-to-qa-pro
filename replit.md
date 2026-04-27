@@ -25,3 +25,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+- **`artifacts/portfolio/`** — Portuguese-language portfolio site for Douglas Carbonel (Quality Assurance Engineer). React + Vite + Tailwind v3 + shadcn/ui, ported from Lovable. Frontend-only (no backend, no auth, no database). Single-page layout with in-page anchor sections (Sobre, Skills, Certificações, Contato). Routing via `react-router-dom` with `basename={import.meta.env.BASE_URL}`. Served at `/`.
