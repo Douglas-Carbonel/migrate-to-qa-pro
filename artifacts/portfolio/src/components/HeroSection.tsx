@@ -37,9 +37,7 @@ const HeroSection = () => {
           </h2>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed">
-            De <span className="text-foreground font-medium">Gerente de Suporte</span> em CRM/SAP 
-            para <span className="text-primary font-medium">QA Engineer</span> — 
-            trazendo visão de negócio, domínio de dados e mentalidade analítica para garantir qualidade de software.
+            <span className="text-primary font-medium">QA Engineer</span> com experiência em troubleshooting, validação de sistemas e fluxos <span className="text-foreground font-medium">CRM/SAP</span>, unindo visão de negócio, análise técnica e automação de testes.
           </p>
 
           <div className="font-mono text-sm text-muted-foreground mt-8 flex flex-wrap gap-4">
