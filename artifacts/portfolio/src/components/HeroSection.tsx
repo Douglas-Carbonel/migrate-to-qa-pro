@@ -90,16 +90,16 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground mb-2 font-mono"
           >
             Olá, eu sou
           </motion.p>
 
           <motion.h1
-            initial={{ opacity: 0, y: 24, filter: "blur(10px)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{ delay: 1.4, duration: 0.8, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
             className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-2"
           >
             <span className="text-gradient">{fullName}</span>
@@ -108,7 +108,7 @@ const HeroSection = () => {
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2.4, duration: 0.6 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
             className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-muted-foreground"
           >
             Quality Assurance Engineer
@@ -117,7 +117,7 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2.7, duration: 0.6 }}
+            transition={{ delay: 1.0, duration: 0.6 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed"
           >
             <span className="text-primary font-medium">QA Engineer</span> com experiência em
@@ -131,7 +131,7 @@ const HeroSection = () => {
             animate="visible"
             variants={{
               hidden: {},
-              visible: { transition: { staggerChildren: 0.08, delayChildren: 3 } },
+              visible: { transition: { staggerChildren: 0.08, delayChildren: 1.3 } },
             }}
             className="font-mono text-sm text-muted-foreground mt-8 flex flex-wrap gap-4"
           >
@@ -159,8 +159,8 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{
-          opacity: { delay: 3.6, duration: 0.6 },
-          y: { duration: 2, repeat: Infinity, delay: 3.6 },
+          opacity: { delay: 1.8, duration: 0.6 },
+          y: { duration: 2, repeat: Infinity, delay: 1.8 },
         }}
       >
         <ChevronDown className="w-6 h-6 text-muted-foreground" />
