@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Github } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const fullName = "Douglas Carbonel";
@@ -127,11 +127,39 @@ const HeroSection = () => {
           </motion.p>
 
           <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2, duration: 0.5 }}
+            className="mt-8 flex flex-wrap gap-3"
+          >
+            <motion.a
+              href="#projetos"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-medium px-5 py-2.5 rounded-md hover:glow-box-strong transition-shadow group"
+            >
+              Ver Projetos
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </motion.a>
+            <motion.a
+              href="https://github.com/Douglas-Carbonel"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 glass border border-border hover:border-primary/40 text-foreground font-medium px-5 py-2.5 rounded-md transition-colors"
+            >
+              <Github className="w-4 h-4" />
+              GitHub
+            </motion.a>
+          </motion.div>
+
+          <motion.div
             initial="hidden"
             animate="visible"
             variants={{
               hidden: {},
-              visible: { transition: { staggerChildren: 0.08, delayChildren: 1.3 } },
+              visible: { transition: { staggerChildren: 0.08, delayChildren: 1.5 } },
             }}
             className="font-mono text-sm text-muted-foreground mt-8 flex flex-wrap gap-4"
           >
