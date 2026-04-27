@@ -40,7 +40,14 @@ const AboutSection = () => {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
+          <motion.div
+            initial={{ scaleY: 0 }}
+            whileInView={{ scaleY: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            style={{ transformOrigin: "top" }}
+            className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/60 via-border to-transparent md:-translate-x-px"
+          />
 
           <div className="space-y-12 md:space-y-16">
             {timeline.map((item, index) => (
@@ -55,7 +62,13 @@ const AboutSection = () => {
                 }`}
               >
                 {/* Dot on timeline */}
-                <div className="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-primary glow-box -translate-x-1.5 mt-2 z-10" />
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.15 + 0.2, type: "spring", stiffness: 300 }}
+                  className="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-primary glow-box -translate-x-1.5 mt-2 z-10 animate-pulse-glow"
+                />
 
                 {/* Content */}
                 <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}>

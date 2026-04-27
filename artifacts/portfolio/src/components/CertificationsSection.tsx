@@ -58,11 +58,12 @@ const CertificationsSection = () => {
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.08 }}
-              className="glass rounded-xl p-6 group hover:glow-box transition-all duration-500 relative overflow-hidden"
+              initial={{ opacity: 0, y: 30, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ delay: index * 0.08, duration: 0.5, ease: "easeOut" }}
+              whileHover={{ y: -6, transition: { duration: 0.2 } }}
+              className="glass rounded-xl p-6 group hover:glow-box transition-shadow duration-500 relative overflow-hidden"
             >
               {/* Status indicator */}
               <div className="flex items-center justify-between mb-4">
