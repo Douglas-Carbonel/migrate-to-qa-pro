@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Github,
   ExternalLink,
@@ -9,6 +10,7 @@ import {
   PlayCircle,
   Bug,
   Star,
+  ArrowRight,
 } from "lucide-react";
 
 import dashboardImg from "@assets/image_1777277800023.png";
@@ -156,10 +158,17 @@ const FeaturedFourQa = () => {
             )}
           </div>
 
-          <div className="mt-auto">
+          <div className="mt-auto flex flex-wrap items-center gap-4">
+            <Link
+              to="/4qa"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-medium hover:bg-primary/90 transition-colors group/cta"
+            >
+              <span>Ver página do produto</span>
+              <ArrowRight className="w-4 h-4 transition-transform group-hover/cta:translate-x-1" />
+            </Link>
             <span className="inline-flex items-center gap-2 font-mono text-sm text-muted-foreground">
               <Sparkles className="w-4 h-4 text-primary" />
-              MVP em construção · acesso em breve
+              MVP em construção
             </span>
           </div>
         </div>
