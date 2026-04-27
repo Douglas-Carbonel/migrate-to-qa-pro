@@ -120,7 +120,7 @@ const ProjectsSection = () => {
               ) : (
                 <span className="inline-flex items-center gap-2 font-mono text-sm text-muted-foreground self-start">
                   <Sparkles className="w-4 h-4 text-primary" />
-                  Em breve
+                  MVP em desenvolvimento
                 </span>
               )}
 
