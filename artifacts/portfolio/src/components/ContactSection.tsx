@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, Download } from "lucide-react";
+import { Mail, Linkedin, Github, Download, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -64,6 +64,15 @@ const ContactSection = () => {
             >
               <Mail className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">E-mail</span>
+            </a>
+            <a
+              href="https://wa.me/5551983453300"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass rounded-xl px-6 py-4 flex items-center gap-3 hover:glow-box transition-all duration-300 group"
+            >
+              <MessageCircle className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">WhatsApp</span>
             </a>
             <a
               href="https://www.linkedin.com/in/douglascarbonel"
