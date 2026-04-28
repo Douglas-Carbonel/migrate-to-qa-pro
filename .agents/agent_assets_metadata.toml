@@ -1,8 +1,13 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "x_kyv-6TmhtMerfbEgWQE"
 uri = "file://artifacts/portfolio/public/og-image.png"
 type = "image"
 title = "generated_image"
+
+[[outputs]]
+id = "HwN8WUKtItePvtfjGNlyf"
+uri = "file://artifacts/portfolio/public/cv-douglas-carbonel.pdf"
+type = "pdf"
+title = "CV Douglas Carbonel — versão atualizada (2 páginas)"
