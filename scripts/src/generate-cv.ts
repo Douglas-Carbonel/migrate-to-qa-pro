@@ -363,11 +363,10 @@ const sections: Section[] = [
   function certificacoes() {
     sectionTitle("Certificações e Cursos Complementares");
     [
-      "Testes Automatizados com Cypress — Avançado",
-      "Testes Automatizados com Cypress — Básico",
-      "Mentoria em QA com foco em Cypress",
+      "Testes Automatizados com Cypress — Avançado (Talking About Testing / Walmyr Filho)",
+      "Testes Automatizados com Cypress — Básico (Talking About Testing / Walmyr Filho)",
+      "Mentoria em QA com foco em Cypress — com Walmyr Filho (Cypress Ambassador)",
       "ITIL Foundation v4",
-      "Scrum Foundation Professional",
       "Lógica de Programação: Laços e Listas com JavaScript",
       "Lógica de Programação: Comece em Lógica com o Jogo Pong e JavaScript",
     ].forEach(bullet);

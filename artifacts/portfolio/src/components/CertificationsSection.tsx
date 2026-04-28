@@ -9,8 +9,20 @@ const certifications = [
     active: false,
   },
   {
-    title: "SAP Certified Application Associate",
-    issuer: "SAP",
+    title: "Testes Automatizados com Cypress — Avançado",
+    issuer: "Talking About Testing (Walmyr Filho)",
+    status: "Concluído",
+    active: true,
+  },
+  {
+    title: "Testes Automatizados com Cypress — Básico",
+    issuer: "Talking About Testing (Walmyr Filho)",
+    status: "Concluído",
+    active: true,
+  },
+  {
+    title: "Mentoria em QA com foco em Cypress",
+    issuer: "Walmyr Filho — Cypress Ambassador",
     status: "Concluído",
     active: true,
   },
@@ -21,22 +33,10 @@ const certifications = [
     active: true,
   },
   {
-    title: "Scrum Foundation Professional",
-    issuer: "CertiProf",
-    status: "Concluído",
-    active: true,
-  },
-  {
     title: "SQL para Análise de Dados",
     issuer: "Plataforma de Ensino",
     status: "Concluído",
     active: true,
-  },
-  {
-    title: "Automação de Testes com Cypress",
-    issuer: "Udemy / Alura",
-    status: "Em andamento",
-    active: false,
   },
 ];
 
